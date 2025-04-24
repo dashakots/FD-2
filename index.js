@@ -156,12 +156,10 @@ const buildForecastGroup = (data) => {
         divDay.append(dateContainerD, ...data.d.map(buildForecastItem));
     }
     if (data.n) {
-
         dateContainerN.innerText = `${groupDate} - ${DICTIONARY[currentLang].night}`
 
         divNight.append(dateContainerN, ...data.n.map(buildForecastItem))
     }
-
 
     return containerDiv
 }
